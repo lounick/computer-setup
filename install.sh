@@ -60,3 +60,6 @@ bash $APPCONFIG_PATH/nvim/install.sh $subinstall_params
 
 # install urxvt
 bash $APPCONFIG_PATH/urxvt/install.sh $subinstall_params
+
+# setup latex
+bash $APPCONFIG_PATH/latex/install.sh $subinstall_params
