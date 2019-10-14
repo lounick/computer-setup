@@ -51,3 +51,9 @@ bash $APPCONFIG_PATH/tmux/install.sh $subinstall_params
 
 # compile and install tmuxinator
 bash $APPCONFIG_PATH/tmuxinator/install.sh $subinstall_params
+
+# copy vim settings
+bash $APPCONFIG_PATH/vim/install.sh $subinstall_params
+
+# install neovim
+bash $APPCONFIG_PATH/nvim/install.sh $subinstall_params
