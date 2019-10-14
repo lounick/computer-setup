@@ -27,7 +27,7 @@ export SHELL=/bin/bash
 # create alisases
 alias sb="source ~/.bashrc"
 
-source "$GIT_PATH/linux-setup/appconfig/shell/commons.sh"
+source "$GIT_PATH/computer-setup/appconfig/shell/commons.sh"
 
 # is the shell running interactively
 case "$-" in
@@ -107,7 +107,7 @@ runVim() {
 alias vim=runVim
 
 # source tmuxinator
-source $GIT_PATH/linux-setup/submodules/tmuxinator/completion/tmuxinator.bash
+source $GIT_PATH/computer-setup/submodules/tmuxinator/completion/tmuxinator.bash
 
 # by default, athame should be off
 export ATHAME_ENABLED=0

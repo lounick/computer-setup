@@ -26,9 +26,10 @@ do
   fi
 done
 
-autoyes = ""
-if [ "$unattended" == "1" ] then
-  autoyes = "-y"
+autoyes=""
+if [ "$unattended" == "1" ]
+then
+  autoyes="-y"
 fi
 
 sudo apt $autoyes install cmake cmake-curses-gui ruby sl htop \

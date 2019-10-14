@@ -94,8 +94,8 @@ URxvt.keysym.Shift-Control-P: \033[24;5~
 
 ! ! vim: ft=xdefaults
 ! ! EPIGEN_DEL_BLOCK_MATOUS EPIGEN_DEL_BLOCK_PETR EPIGEN_DEL_BLOCK_VASEK {
-! URxvt.background: #121212
-! URxvt.foreground: #dddddd
+URxvt.background: #121212
+URxvt.foreground: #dddddd
 ! ! EPIGEN_DEL_BLOCK_MATOUS EPIGEN_DEL_BLOCK_PETR EPIGEN_DEL_BLOCK_VASEK }
 ! ! EPIGEN_ADD_BLOCK_MATOUS {
 ! ! ! EPIGEN_ADD_BLOCK_TOSHIBA {
@@ -123,50 +123,50 @@ URxvt.keysym.Shift-Control-P: \033[24;5~
 ! ! URxvt.foreground: #dddddd
 ! ! EPIGEN_ADD_BLOCK_VASEK }
 ! ! black
-! URxvt.color0: #1C1C1C
-! URxvt.color8: #404040
+URxvt.color0: #1C1C1C
+URxvt.color8: #404040
 ! ! red
-! URxvt.color1: #B85335
-! URxvt.color9: #CF6A4C
+URxvt.color1: #B85335
+URxvt.color9: #CF6A4C
 ! ! green
-! URxvt.color2: #79AD6A
-! URxvt.color10: #99DD6A
+URxvt.color2: #79AD6A
+URxvt.color10: #99DD6A
 ! ! yellow
-! URxvt.color3: #FFB964
-! URxvt.color11: #FAD07A
+URxvt.color3: #FFB964
+URxvt.color11: #FAD07A
 ! ! blue
-! URxvt.color4: #667899
-! URxvt.color12: #8197BF
+URxvt.color4: #667899
+URxvt.color12: #8197BF
 ! ! magenta
-! URxvt.color5: #A7A7FF
-! URxvt.color13: #C6B6EE
+URxvt.color5: #A7A7FF
+URxvt.color13: #C6B6EE
 ! ! cyan
-! URxvt.color6: #668799
-! URxvt.color14: #8FBFDC
+URxvt.color6: #668799
+URxvt.color14: #8FBFDC
 ! ! white
-! URxvt.color7: #888888
+URxvt.color7: #888888
 ! ! EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX {
-! URxvt.color15: #E8E8D3
+URxvt.color15: #E8E8D3
 ! ! EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX }
 ! ! EPIGEN_ADD_BLOCK_VIKTOR_BIGBOX {
 ! ! URxvt.color15: #FFFFFF
 ! ! EPIGEN_ADD_BLOCK_VIKTOR_BIGBOX }
 
 ! !! URxvt COLORS --------------------------------------------------------
-! URxvt*depth                   : 32
-! ! URxvt.fading                  : 25
-! ! URxvt.fadeColor               : #101010
-! URxvt*visualBell              : false
+URxvt*depth                   : 32
+! URxvt.fading                  : 25
+! URxvt.fadeColor               : #101010
+URxvt*visualBell              : false
 
 ! ! ------------------------------------------------------------------------------
 ! ! ROFI Color theme
 ! ! ------------------------------------------------------------------------------
 ! ! EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX {
-! rofi.color-enabled: true
-! rofi.color-window: #273238, #273238, #1e2529
-! rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-! rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-! rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
 ! ! EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX }
 
 ! ! EPIGEN_ADD_BLOCK_VIKTOR_BIGBOX {

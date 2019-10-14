@@ -12,7 +12,7 @@ export TERM=rxvt-unicode-256color
 
 alias :q=exit
 alias octave="octave --no-gui $@"
-alias indie="export PYTHONHTTPSVERIFY=0; python $GIT_PATH/linux-setup/scripts/indie.py"
+alias indie="export PYTHONHTTPSVERIFY=0; python $GIT_PATH/computer-setup/scripts/indie.py"
 alias demangle="c++filt"
 
 # #{ git()

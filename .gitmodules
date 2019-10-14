@@ -10,3 +10,12 @@
 [submodule "submodules/the_silver_searcher"]
 	path = submodules/the_silver_searcher
 	url = https://github.com/ggreer/the_silver_searcher.git
+[submodule "submodules/vim-plug"]
+	path = submodules/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
+[submodule "submodules/pandoc-goodies"]
+	path = submodules/pandoc-goodies
+	url = https://github.com/tajmone/pandoc-goodies.git
+[submodule "tmux-themepack"]
+	path = tmux-themepack
+	url = https://github.com/jimeh/tmux-themepack.git
