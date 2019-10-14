@@ -597,15 +597,15 @@ if g:user_mode == "1"
   " set vim and airline colorscheme
 
   " EPIGEN_DEL_BLOCK_COLORSCHEME_DARK EPIGEN_DEL_BLOCK_COLORSCHEME_LIGHT EPIGEN_DEL_BLOCK_COLORSCHEME_GRUN {
-  colorscheme default
-  let g:airline_theme='papercolor'
+  " colorscheme default
+  " let g:airline_theme='papercolor'
   " EPIGEN_DEL_BLOCK_COLORSCHEME_DARK EPIGEN_DEL_BLOCK_COLORSCHEME_LIGHT EPIGEN_DEL_BLOCK_COLORSCHEME_GRUN }
 
   " EPIGEN_ADD_BLOCK_COLORSCHEME_DARK {
-  " colorscheme jellybeans
-  "   " EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX {
-  "     let g:airline_theme='jellybeans'
-  "   " EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX }
+  colorscheme jellybeans
+    " EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX {
+      let g:airline_theme='jellybeans'
+    " EPIGEN_DEL_BLOCK_VIKTOR_BIGBOX }
   "   " EPIGEN_ADD_BLOCK_VIKTOR_BIGBOX {
   " "   let g:lightline = {
   " "       \ 'colorscheme': 'wombat',
@@ -668,3 +668,4 @@ endif
   "   source ~/.my.vimrc
   " endif
   " EPIGEN_ADD_BLOCK_VIKTOR_BIGBOX }
+
