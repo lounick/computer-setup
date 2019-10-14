@@ -66,3 +66,6 @@ bash $APPCONFIG_PATH/latex/install.sh $subinstall_params
 
 # setup pdftk
 bash $APPCONFIG_PATH/pdftk/install.sh $subinstall_params
+
+# setup pandoc
+bash $APPCONFIG_PATH/pandoc/install.sh $subinstall_params
