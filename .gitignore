@@ -1,0 +1,11 @@
+*.swp
+*.orig
+*.pyc
+
+appconfig/vim/dotvim/plugged/*
+appconfig/vim/dotvim/session
+appconfig/vim/dotvim/.netrwhist
+
+html/
+
+**/__pycache__
