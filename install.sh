@@ -78,3 +78,105 @@ bash $APPCONFIG_PATH/silver_searcher/install.sh $subinstall_params
 
 # install playerctl
 bash $APPCONFIG_PATH/playerctl/install.sh $subinstall_params
+
+#############################################
+# remove the interactivity check from bashrc
+#############################################
+
+if [ -x "$(whereis nvim | awk '{print $2}')" ]; then
+  VIM_BIN="$(whereis nvim | awk '{print $2}')"
+  HEADLESS="--headless"
+elif [ -x "$(whereis vim | awk '{print $2}')" ]; then
+  VIM_BIN="$(whereis vim | awk '{print $2}')"
+  HEADLESS=""
+fi
+
+$VIM_BIN $HEADLESS -E -s -c "%g/running interactively/norm dap" -c "wqa" -- ~/.bashrc
+
+#############################################
+# adding GIT_PATH variable to .bashrc
+#############################################
+
+# add variable for path to the git repository
+num=`cat ~/.bashrc | grep "GIT_PATH" | wc -l`
+if [ "$num" -lt "1" ]; then
+
+  TEMP=`( cd "$MY_PATH/../" && pwd )`
+
+  echo "Adding GIT_PATH variable to .bashrc"
+  # set bashrc
+  echo "
+# path to the git root
+export GIT_PATH=$TEMP" >> ~/.bashrc
+fi
+
+#############################################
+# add tmux sourcing of dotbashrd to .bashrc
+#############################################
+
+num=`cat ~/.bashrc | grep "RUN_TMUX" | wc -l`
+if [ "$num" -lt "1" ]; then
+
+  default=y
+  while true; do
+    if [[ "$unattended" == "1" ]]
+    then
+      resp=$default
+    else
+      [[ -t 0 ]] && { read -t 10 -n 2 -p $'\e[1;32mDo you want to run TMUX automatically with every terminal? [y/n] (default: '"$default"$')\e[0m\n' resp || resp=$default ; }
+    fi
+    response=`echo $resp | sed -r 's/(.*)$/\1=/'`
+
+    if [[ $response =~ ^(y|Y)=$ ]]
+    then
+
+      echo "
+# want to run tmux automatically with new terminal?
+export RUN_TMUX=true" >> ~/.bashrc
+
+      echo "Setting variable RUN_TMUX to true"
+
+      break
+    elif [[ $response =~ ^(n|N)=$ ]]
+    then
+
+      echo "
+# want to run tmux automatically with new terminal?
+export RUN_TMUX=false" >> ~/.bashrc
+
+      echo "Setting variable RUN_TMUX to false"
+
+      break
+    else
+      echo " What? \"$resp\" is not a correct answer. Try y+Enter."
+    fi
+  done
+fi
+
+#############################################
+# link the scripts folder
+#############################################
+
+if [ ! -e ~/.scripts ]; then
+  ln -sf $MY_PATH/scripts ~/.scripts
+fi
+
+#############################################
+# add sourcing of dotbashrd to .bashrc
+#############################################
+num=`cat ~/.bashrc | grep "dotbashrc" | wc -l`
+if [ "$num" -lt "1" ]; then
+
+  echo "Adding source to .bashrc"
+  # set bashrc
+  echo "
+# source Tomas's Linux Setup
+source $APPCONFIG_PATH/bash/dotbashrc" >> ~/.bashrc
+
+fi
+
+# finally source the correct rc file
+toilet All Done
+
+# say some tips to the new user
+echo "Huray, the 'Linux Setup' should be ready, try opening new terminal."

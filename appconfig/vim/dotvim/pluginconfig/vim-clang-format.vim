@@ -118,7 +118,7 @@ let g:clang_format#style_options = g:clang_format_petr
 endfunc
 
 function! SetTomasFormat()
-let g:clang_format#style_options = g:clang_format_tomas
+"let g:clang_format#style_options = g:clang_format_tomas
 endfunc
 
 " this is the default
