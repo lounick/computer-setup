@@ -72,3 +72,7 @@ bash $APPCONFIG_PATH/pandoc/install.sh $subinstall_params
 
 # setup ranger
 bash $APPCONFIG_PATH/ranger/install.sh $subinstall_params
+
+# install the silver searcher
+bash $APPCONFIG_PATH/silver_searcher/install.sh $subinstall_params
+

@@ -7,3 +7,6 @@
 [submodule "submodules/fonts"]
 	path = submodules/fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "submodules/the_silver_searcher"]
+	path = submodules/the_silver_searcher
+	url = https://github.com/ggreer/the_silver_searcher.git

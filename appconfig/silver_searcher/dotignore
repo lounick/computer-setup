@@ -1,0 +1,16 @@
+# general defaults
+*.png
+*.jpg
+*.pdf
+*.pyc
+/tmp/
+youcompleteme/
+build/
+/*workspace/devel/
+/*workspace/logs/
+/*/install/
+simulation/Firmware/
+submodules/
+/PlayOnLinux*/
+/VirtualBox*/
+
